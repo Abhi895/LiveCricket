@@ -1,0 +1,7 @@
+LiveCricket/Secrets.swift
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+DerivedData/
+.DS_Store

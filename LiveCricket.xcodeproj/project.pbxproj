@@ -7,19 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E102D25729D37196005587CD /* CricketData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E102D25629D37196005587CD /* CricketData.swift */; };
+		E110D48C29DB6AB10024E8EA /* PlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E110D48B29DB6AB10024E8EA /* PlayerData.swift */; };
 		E1F1103E29BCB06D007F27EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F1103D29BCB06D007F27EE /* AppDelegate.swift */; };
 		E1F1104029BCB06D007F27EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F1103F29BCB06D007F27EE /* ViewController.swift */; };
+		E1A2B3C4D5E6F7A8B9C0D1E3 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2B3C4D5E6F7A8B9C0D1E2 /* Secrets.swift */; };
 		E1F1104229BCB06E007F27EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1F1104129BCB06E007F27EE /* Assets.xcassets */; };
 		E1F1104529BCB06E007F27EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F1104329BCB06E007F27EE /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E102D25629D37196005587CD /* CricketData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricketData.swift; sourceTree = "<group>"; };
+		E110D48B29DB6AB10024E8EA /* PlayerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerData.swift; sourceTree = "<group>"; };
 		E1F1103A29BCB06D007F27EE /* LiveCricket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveCricket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F1103D29BCB06D007F27EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1F1103F29BCB06D007F27EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E1F1104129BCB06E007F27EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1F1104429BCB06E007F27EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1F1104629BCB06E007F27EE /* LiveCricket.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LiveCricket.entitlements; sourceTree = "<group>"; };
+		E1F1104D29BCB5F6007F27EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E1A2B3C4D5E6F7A8B9C0D1E2 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E102D25329D37168005587CD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E1F1103F29BCB06D007F27EE /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E102D25529D37180005587CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E102D25629D37196005587CD /* CricketData.swift */,
+				E110D48B29DB6AB10024E8EA /* PlayerData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E1F1103129BCB06D007F27EE = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +76,11 @@
 		E1F1103C29BCB06D007F27EE /* LiveCricket */ = {
 			isa = PBXGroup;
 			children = (
+				E1F1104D29BCB5F6007F27EE /* Info.plist */,
 				E1F1103D29BCB06D007F27EE /* AppDelegate.swift */,
-				E1F1103F29BCB06D007F27EE /* ViewController.swift */,
+				E1A2B3C4D5E6F7A8B9C0D1E2 /* Secrets.swift */,
+				E102D25529D37180005587CD /* Model */,
+				E102D25329D37168005587CD /* Controllers */,
 				E1F1104129BCB06E007F27EE /* Assets.xcassets */,
 				E1F1104329BCB06E007F27EE /* Main.storyboard */,
 				E1F1104629BCB06E007F27EE /* LiveCricket.entitlements */,
@@ -89,7 +116,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					E1F1103929BCB06D007F27EE = {
 						CreatedOnToolsVersion = 14.2;
@@ -132,6 +159,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1F1104029BCB06D007F27EE /* ViewController.swift in Sources */,
+				E1A2B3C4D5E6F7A8B9C0D1E3 /* Secrets.swift in Sources */,
+				E102D25729D37196005587CD /* CricketData.swift in Sources */,
+				E110D48C29DB6AB10024E8EA /* PlayerData.swift in Sources */,
 				E1F1103E29BCB06D007F27EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,6 +213,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -200,7 +231,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -243,6 +274,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -254,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -272,9 +304,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 246RGWZ5HR;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveCricket/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -282,6 +317,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abhireddy.LiveCricket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,13 +331,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = LiveCricket/LiveCricket.entitlements;
+				CODE_SIGN_ENTITLEMENTS = LiveCricket/LiveCricketRelease.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 246RGWZ5HR;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveCricket/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -309,6 +349,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abhireddy.LiveCricket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
